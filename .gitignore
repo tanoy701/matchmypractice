@@ -6,3 +6,6 @@ Thumbs.db
 .env.*
 .claude/
 claude.md.txt
+
+.vercel
+.env*
