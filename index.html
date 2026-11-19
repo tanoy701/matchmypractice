@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Match My Practice | AI Client Intake for Private Practices</title>
+  <meta name="description" content="We automate client intake and follow-up for private practices, so you save 10+ hours a week and turn more website visitors into booked consultations.">
+  <meta property="og:title" content="Match My Practice | AI Client Intake for Private Practices">
+  <meta property="og:description" content="Stop losing leads to slow follow-up. AI intake workflows that book more consultations and give you your week back.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Match My Practice home">Match<span>My</span>Practice</a>
+    <a class="btn btn-small" href="#audit">Get a free audit</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO: ad-hook match + form above the fold -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">AI intake automation for private practices</p>
+        <h1>Save 10+ hours a week and turn more website visitors into booked consultations.</h1>
+        <p class="lead">Most practices lose inquiries to slow replies, phone tag and paper intake forms. We build AI workflows that respond in minutes, screen for fit and put qualified clients on your calendar.</p>
+        <ul class="checks">
+          <li>Instant, on-brand replies to every web inquiry</li>
+          <li>Automated intake and pre-screening, no more phone tag</li>
+          <li>Qualified leads delivered straight to your calendar</li>
+        </ul>
+      </div>
+
+      <div class="card form-card" id="audit">
+        <h2>Get your free intake audit</h2>
+        <p class="form-sub">Tell us about your practice. We'll reply within one business day with where you're losing leads and what to automate first.</p>
+
+        <form id="lead-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <!-- REPLACE with your Web3Forms access key (free at web3forms.com) -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New audit request: Match My Practice">
+          <input type="hidden" name="from_name" value="Match My Practice Website">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="Dr. Jane Smith">
+
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@yourpractice.com">
+
+          <label for="practice">Practice type</label>
+          <select id="practice" name="practice_type" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Therapy / mental health</option>
+            <option>Medical / primary care</option>
+            <option>Dental</option>
+            <option>Chiropractic / physical therapy</option>
+            <option>Med spa / wellness</option>
+            <option>Legal / professional services</option>
+            <option>Other</option>
+          </select>
+
+          <p class="error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-block" type="submit" id="submit-btn">Get my free audit</button>
+          <p class="fine">No spam, no sales pressure. Your details are used only to respond to this request.</p>
+        </form>
+
+        <div class="success" id="form-success" role="status" hidden>
+          <h3>Thanks, you're on the list.</h3>
+          <p>We'll email you within one business day with your intake audit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section alt">
+    <div class="wrap">
+      <h2 class="center">Every slow reply is a client who booked someone else.</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>Inquiries sit overnight</h3>
+          <p>Prospective clients contact several practices at once. The first one to respond with a clear next step usually wins.</p>
+        </div>
+        <div class="card">
+          <h3>Intake eats your day</h3>
+          <p>Phone tag, emailed PDFs and re-typing details into your system pull you away from the work you're trained to do.</p>
+        </div>
+        <div class="card">
+          <h3>Poor-fit leads waste slots</h3>
+          <p>Without pre-screening, consultation time goes to people you can't serve or who never show up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="center">How it works</h2>
+      <ol class="steps">
+        <li>
+          <span class="num">1</span>
+          <h3>Audit</h3>
+          <p>We map how inquiries reach you today and find where leads drop off.</p>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <h3>Build</h3>
+          <p>We set up AI-assisted replies, intake forms, screening questions and calendar booking that match your voice and rules.</p>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <h3>Hand off</h3>
+          <p>You get a documented system your team can run on its own, plus a simple report on inquiries, bookings and time saved.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="section alt">
+    <div class="wrap two-col">
+      <div>
+        <h2>What changes in your practice</h2>
+        <p class="lead">Built for owners who want more booked consultations without hiring more admin staff.</p>
+      </div>
+      <ul class="feature-list">
+        <li><strong>Faster first response.</strong> Inquiries get a helpful reply in minutes, day or night.</li>
+        <li><strong>Cleaner intake.</strong> Details arrive structured and ready, not scattered across email threads.</li>
+        <li><strong>Better-fit consultations.</strong> Screening questions filter before anyone touches your calendar.</li>
+        <li><strong>You stay in control.</strong> You set the rules, tone and escalation points. Anything sensitive routes to a human.</li>
+        <li><strong>Privacy-minded setup.</strong> We design around your compliance requirements and confirm tool choices with you before launch.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap narrow">
+      <h2 class="center">Common questions</h2>
+      <details>
+        <summary>Do I need to change my current website or software?</summary>
+        <p>Usually not. We connect to what you already use for your site, calendar and email, and recommend changes only where they clearly help.</p>
+      </details>
+      <details>
+        <summary>Will the AI talk to clients without my approval?</summary>
+        <p>Only within the rules you approve. You review the scripts and screening logic before launch, and clinical or sensitive topics hand off to you or your staff.</p>
+      </details>
+      <details>
+        <summary>Is this HIPAA compliant?</summary>
+        <p>Compliance depends on your practice and the tools involved. We design workflows with that in mind and will tell you plainly what needs a BAA or legal review. This page is not legal advice.</p>
+      </details>
+      <details>
+        <summary>What does the free audit include?</summary>
+        <p>A short review of your current inquiry-to-booking path, the top places leads are slipping, and a recommended first automation. There is no obligation to hire us.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta">
+    <div class="wrap center">
+      <h2>See where your practice is losing leads.</h2>
+      <p>Get a free intake audit within one business day.</p>
+      <a class="btn btn-light" href="#audit">Get my free audit</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>&copy; <span id="year">2026</span> Match My Practice</span>
+    <span>Questions? Use the form above and we'll reply by email.</span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
